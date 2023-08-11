@@ -4,7 +4,7 @@ const request=require('request-promise');
 
 const PORT=process.env.PORT || 3000;
 
-const generateScraperUrl=(apiKey)=>`http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
+const generateScraperUrl=(api_Key)=>`http://api.scraperapi.com?api_key=${api_Key}&autoparse=true`;
 const app=express();
 app.get('/',(req,res)=>{
     res.send("Welcome to Amazon Web Scrapper API.")
